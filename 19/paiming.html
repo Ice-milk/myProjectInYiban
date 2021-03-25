@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>投票统计</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        @media screen and (min-width: 1024px) {
+            body {
+                position: absolute;
+                left: 20%;
+                right: 20%;
+                top: 5%;
+            }
+        }
+
+        h5 {
+            float: left;
+        }
+
+        .rounded-circle {
+            /* height: 60px; */
+            width: 80px;
+            float: left;
+        }
+
+        .progress {
+            clear: both;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 30px;
+            overflow: visible;
+        }
+
+        .progress .progress-bar {
+            position: relative;
+            -webkit-animation: animate-positive 2s;
+            animation: animate-positive 2s
+        }
+
+        .progress .progress-bar:after {
+            content: "";
+            width: 9px;
+            background: #fff;
+            position: absolute;
+            top: -10px;
+            bottom: -10px;
+            right: -5px;
+            z-index: 1;
+            transform: rotate(35deg);
+        }
+
+        @-webkit-keyframes animate-positive {
+            0% {
+                width: 0;
+            }
+        }
+
+        @keyframes animate-positive {
+            0% {
+                width: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="containter-fluid">
+        <a href="#">
+            <center>
+                <img src="images/vote.jpg" alt="首页图片" class="img-fluid rounded">
+            </center>
+        </a>
+    </header>
+
+    <nav class="navbar navbar-expand-md bg-danger navbar-dark">
+        <a class="navbar-brand" href="#">辅导员人气投票结果</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#index">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="index">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="article.php">推送</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="know.php">知识库</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://q.yiban.cn/app/index/appid/206138">原投票轻应用</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container-fluid">
+    	<ol>
+    		<li>罗吉勇<br />商学院</li>
+    		<img src="images/A7.jpg" class="rounded-circle" alt="辅导员照片">
+    		<div class="progress">
+                <div class="progress-bar progress-bar-striped" style="width:91.90%">
+                    <strong>919票</strong>
+                </div>
+            </div>
+            <li>尹惠敏<br />核技术与自动化工程学院</li>
+        	<img src="images/A5.jpg" class="rounded-circle" alt="辅导员照片">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" style="width:91.30%">
+                    <strong>913票</strong>
+                </div>
+            </div>
+            <li>张耀元<br />核技术与自动化工程学院</li>
+            <img src="images/A2.jpg" class="rounded-circle" alt="辅导员照片">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" style="width:67.80%">
+                    <strong>678票</strong>
+                </div>
+            </div>
+            <li>杨川<br />能源学院</li>
+            <img src="images/A1.jpg" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:49.90%">
+                        <strong>499票</strong>
+                    </div>
+                </div>
+            <li>马昱宇<br />传播科学与艺术学院</li>
+            <img src="images/A8.jpg" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:42.90%">
+                        <strong>429票</strong>
+                    </div>
+            </div>
+            <li>李莜敏<br />法学院</li>
+            <img src="images/A6.jpg" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:38.20%">
+                        <strong>382票</strong>
+                    </div>
+            </div>
+            <li>项颖<br />管理科学学院</li>
+            <img src="images/A11.jpg" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:36.90%">
+                        <strong>369票</strong>
+                    </div>
+            </div>
+            <li>石春林<br />传播科学与艺术学院</li>
+            <img src="images/A9.jpg" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:36.60%">
+                        <strong>366票</strong>
+                    </div>
+            </div>
+            <li>贾龙宇<br />地球物理学院</li>
+            <img src="images/A10.jpg" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:35.80%">
+                        <strong>358票</strong>
+                    </div>
+            </div>
+            <li>范海经<br />环境与土木工程学院</li>
+            <img src="images/A3.jpg" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:35.60%">
+                        <strong>356票</strong>
+                    </div>
+            </div>
+            <li>刘斌<br />环境与土木工程学院</li>
+        	<img src="images/A4.jpg" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:35.30%">
+                        <strong>353票</strong>
+                    </div>
+            </div>
+            <li>曾智<br />商学院</li>
+            <img src="images/B1.JPG" class="rounded-circle" alt="辅导员照片">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width:14.50%">
+                        <strong>145票</strong>
+                    </div>
+            </div>
+        </ol>
+    </div>
+
+    <a class="btn btn-light" role="button" style="bottom:60px; cursor:pointer; position:fixed; right:25px;" href="#">
+        <i class="fa fa-rocket fa-rotate-270" onclick="$('html,body').animate({scrollTop: '0px'}, 300);"></i>
+    </a>
+</body>
+
+</html>

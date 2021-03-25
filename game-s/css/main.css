@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* *********** body自动调节 *********** */
+
+@media screen and (min-width: 1024px) {
+    body {
+        position: absolute;
+        left: 20%;
+        right: 20%;
+    }
+}
+
+/* *********** body自动调节 *********** */
+
+/* *********** 图片轮播 *********** */
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* *********** 图片轮播 *********** */
+
+/* ********** 底部导航栏 ********** */
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.bar {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    height: 44px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 0;
+    background-color: #00a5ed;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.bar-tab {
+    bottom: 0;
+    display: table;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    table-layout: fixed;
+    border-top: 0;
+    border-bottom: 0;
+    -webkit-touch-callout: none
+}
+
+.bar-tab .tab-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.bar-tab .tab-item .icon {
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.bar-tab .tab-item .icon~.tab-label {
+    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+/* ********** 底部导航栏 ********** */
+
+/* ********** 置顶按钮 ********** */
+/* ********** 置顶按钮 ********** */
